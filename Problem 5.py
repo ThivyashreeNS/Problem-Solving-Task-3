@@ -1,7 +1,7 @@
-""" Problem 5: you have been given a list of N integers which represents the number of mangoes in a bag.
-               Each has variable number of mangoes. There are M students in a guvi class, your task is to 
-               distribute the mangoes in such a way that each students gets one bag. The difference between
-               the number of mangoes in a bag with maximum mangoes and a bag with minimum mangoes given to student is minimum?"""
+""" Problem 5: You have been given a list of N integers which represents the number of mangoes in a bag. Each
+               has variable number of mangoes. There are M students in a guvi class, your task is to distribute
+               the mangoes in such a way that each students gets one bag. The difference between the number of 
+               mangoes in a bag with maximum mangoes and a bag with minimum mangoes given to student is minimum?"""
 
 
 
@@ -16,11 +16,13 @@ no_of_bags = len(N)
 # Number of Students(M)
 M = int(input("Enter the number of students:"))
 
-# an empty list to store the distributed bags to the students
-given_bags = []
+given_bags = []                            # an empty list to store the distributed bags to the students
 
+
+# To check the students in the Guvi class is more than the number of bags
 if M>no_of_bags:
-    print("Students in the class are more than the no. of bags")
+    print("Students in the Guvi class are more than the no. of bags")
+  
 else:
     for i in N:                             # iterates through the list of mangoes
         if len(given_bags)<M:               # checks the number of students to distribute
