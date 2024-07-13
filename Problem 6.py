@@ -8,7 +8,7 @@ def duplicates(list):
     duplicate = []
     
     for i in list:
-        if i not in unique:         # condition to check the current value is present in the listor not
+        if i not in unique:         # condition to check the current value is present in the list or not
             unique.append(i)        # if True, append in the unique list
         elif i not in duplicate:    # else, check in the duplicate list and append if not
             duplicate.append(i)     
